@@ -1,0 +1,23 @@
+{
+  "name": "inbrowser-tank-game",
+  "version": "0.0.1",
+  "description": "This is a game using real time web socket concept",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avenge-PRC777/inbrowser-tank-game.git"
+  },
+  "author": "Prasanjit Rath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avenge-PRC777/inbrowser-tank-game/issues"
+  },
+  "homepage": "https://github.com/Avenge-PRC777/inbrowser-tank-game#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
