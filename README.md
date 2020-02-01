@@ -7,3 +7,4 @@ This is a real time tank game using Websockets!
 ## What are types of HTTP requests?
 ## How to make HTTP requests in linux?
 ## What are static files?
+## How to debug using log files?
