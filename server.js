@@ -11,7 +11,7 @@ var app=express();//require('module.js')(.js can be omitted)
 //So, express returns/exports a function to variable express, and app
 //calls it
 
-const port=5000;
+var port=5000||process.env.PORT;
 //http.Server.listen(port) is same as app.listen(port)
 //app is to be given to node's HTTP servers as callback function
 
