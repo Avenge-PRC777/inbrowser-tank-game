@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--Makes page responsive-->
-	<head>
-		<style>
-			.canvasone{
-				border:2px solid #69a2db;
-				width:100%;
-				height="400";
-			}
-		</style>
-	</head>
-	<body>
-		<canvas id="myCanvas" class="canvasone">Your browser does not support HTML5 canvas tag</canvas>
-		<script>
-			var c=document.getElementById("myCanvas");
-			var ctx=c.getContext('2d');
-			ctx.font="30px Arial";
-			ctx.fillText("Hello World",10,50);
-		</script>
-	</body>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<head>
+<style>
+  .mycanvas{
+    border: 3px solid #3dcdcd;
+    width:100vw;height:100px;
+  }
+</style>
+</head>
+
+<body>
+  <input type="button" id="myButton" value="Hey there" onclick="changeButtonText()">
+  <canvas class="mycanvas" id="myCanvas">
+  </canvas>
+  <script>
+  var i=0;
+    var canva=document.getElementById("myCanvas");
+    var ctx=canva.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(100,100);
+    ctx.stroke();
+    ctx.font="1vw Arial";
+    ctx.fillText("Hello World",10,50);
+  function changeButtonText(){
+    var x=document.getElementById("myButton");
+    if(i==0)
+    {	
+      x.value="Changed";
+      i=1;
+     }
+    else
+    {
+      x.value="Click me";
+      i=0;
+    }
+   }
+  </script>
+</body>
 </html>
